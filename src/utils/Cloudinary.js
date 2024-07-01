@@ -1,7 +1,7 @@
 import { v2 as cloudinary } from 'cloudinary';
 import fs from "fs";
 
-(async function() {
+
 
     cloudinary.config({ 
         cloud_name: process.env.CLOUDINARY_CLOUD_NAME , 
@@ -38,4 +38,6 @@ import fs from "fs";
     
     console.log(uploadResult);
      
-})();
+
+
+export {uploadOnCloudinary}
